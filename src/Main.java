@@ -35,7 +35,8 @@ public class Main {
         int currentYear = LocalDate.now().getYear();
         if (clientDeviceYear < currentYear && clientOS == 0) {
             clientOS = 2;
-        } else if (clientDeviceYear < currentYear && clientOS == 1) {
+        }
+        if (clientDeviceYear < currentYear && clientOS == 1) {
             clientOS = 3;
         }
         switch (clientOS) {
